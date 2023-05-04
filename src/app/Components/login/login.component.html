@@ -1,0 +1,15 @@
+<div class="container-login">
+    <div class="login">
+        <h1>Login</h1>
+
+        <label>
+            Email
+            <input  placeholder="Email" autocomplete="off" name="mail" [(ngModel)]="email" required>
+        </label>
+        <label>
+            Password
+            <input type="password" placeholder="Password" autocomplete="off" name="pass"[(ngModel)]="password" required>
+        </label>
+        <button (click)="login()" >Login</button>
+    </div>
+</div>

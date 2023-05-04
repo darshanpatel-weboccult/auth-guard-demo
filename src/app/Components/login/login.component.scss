@@ -1,0 +1,48 @@
+.container-login{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+    .login{
+        padding: 30px;
+        border: 1px solid darkblue;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h1{
+            text-align: left;
+        }
+        label{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 18px;
+            font-weight: 500;
+            input{
+                width: 300px;
+                border: 1px solid silver;
+                border-radius: 5px;
+                background-color: white;
+                padding:  10px;
+                font-size: 20px;
+                outline: 0;
+
+                &:focus, &:valid{
+                    border-color: blue;
+                }
+            }
+        }
+        button{
+            padding: 10px;
+            background-color: darkblue;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            border: 0;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
